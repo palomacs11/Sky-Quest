@@ -74,7 +74,7 @@ void setup() {
   }
 
   //--Port initialization. The baud rate and port should be the same set on the Arduino IDE.
-  ardPort = new Serial(this, "COM4", 57600);            
+  ardPort = new Serial(this, "COM7", 57600);            
 
   //--Text settings (uncomment code lines to list fonts and choose a different one. 
   //  String[] fontList = PFont.list();
@@ -460,7 +460,7 @@ void pitchScale() {
     text(""+i*5, 50, 25*i, 25, 15); 
     text(""+i*5, -90, 25*i, 65, 15);
   } 
-  textAlign(CORNER); 
+  textAlign(CENTER); 
   strokeWeight(1); 
   for (int i=-9; i<10; i++) { 
     if ((i==0)==false) {    
